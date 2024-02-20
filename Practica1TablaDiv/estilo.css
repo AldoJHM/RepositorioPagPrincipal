@@ -1,0 +1,39 @@
+.titulo{
+    border: 10px ridge #1480E5;
+    background-color: #3393FF;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.table-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+}
+.cell {
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden; /* Evita que el contenido desborde */
+    word-wrap: break-word; /* Rompe las palabras largas para que quepan */
+}
+
+.cell iframe {
+    max-width: 100%; /* El ancho máximo del iframe es el 100% de su contenedor */
+    height: auto; /* La altura se ajusta automáticamente */
+}
+.cell:nth-child(odd) {
+    background-color: #f2f2f2;
+}
