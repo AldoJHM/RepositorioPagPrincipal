@@ -1,0 +1,7 @@
+body {
+    background-image: url(../imagenes/Fondo.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: style="filter: blur(5px); opacity: 0.6"; 
+}
