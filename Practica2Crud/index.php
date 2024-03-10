@@ -120,38 +120,18 @@
     </div>
 
     <script>
-      // Script para enviar el formulario de inserción de producto mediante AJAX
-document.getElementById('insertar-formulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar la recarga de la página
+   const InsertProducto = document.getElementById('InsertProducto')
+      if (InsertProducto) {
+        exampleModal.addEventListener('show.bs.modal', event => {
+          const button = event.relatedTarget
+          const recipient = button.getAttribute('data-bs-whatever')
+          const modalTitle = exampleModal.querySelector('.modal-title')
+          const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-    // Obtener los datos del formulario
-    var formData = new FormData(this);
-
-    // Enviar los datos al servidor mediante AJAX
-    fetch('insertProducts.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Manejar la respuesta del servidor
-        // Por ejemplo, actualizar la tabla de productos
-        if (data.success) {
-            // Si la inserción fue exitosa, actualizar la tabla de productos
-            // Puedes implementar esta lógica según tus necesidades
-            // Por ejemplo, agregar la fila del nuevo producto a la tabla
-            var newRow = document.createElement('tr');
-            newRow.innerHTML = `<td>${data.noProducto}</td><td>${data.nombreProducto}</td>...`; // Agregar las celdas necesarias con los datos del nuevo producto
-            document.querySelector('table tbody').appendChild(newRow);
-        } else {
-            // Si hubo un error, mostrar un mensaje de error o manejarlo de otra manera
-            console.error('Error al insertar el producto');
-        }
-    })
-    .catch(error => {
-        console.error('Error en la solicitud AJAX:', error);
-    });
-});
+          modalTitle.textContent = New message to ${ recipient }
+          modalBodyInput.value = recipient
+        })
+      }
     </script>
 
     <div class="modal fade" id="updateProducto" tabindex="-1" aria-labelledby="updateProducto" aria-hidden="true">
