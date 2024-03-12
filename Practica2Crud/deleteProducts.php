@@ -10,4 +10,6 @@ if(mysqli_query($conection, $sql)) {
 }
 
 mysqli_close($conection);
+
+header("Location: index.php")
 ?>
