@@ -1,8 +1,8 @@
 <?php
     $host = 'localhost';
-    $user = 'id21894822_aldo';
+    $user = 'id21977174_aldo';
     $password = '@ALDOhernandez28';
-    $db = 'id21894822_cursofebjul24';
+    $db = 'id21977174_cursofebjul24';
 
     $conection = @mysqli_connect($host,$user,$password,$db);
     if (!$conection) {
