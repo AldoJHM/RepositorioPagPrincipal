@@ -10,7 +10,7 @@
   <title>Tabla de productos</title>
   <nav class="navbar bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Madereía Hernández.</a>
+      <a class="navbar-brand" href="#">Maderereía Hernández.</a>
       <div class="d-flex">
         <a class="nav-link me-3" href="#tabla">Tabla</a>
         <a class="nav-link" href="#pie-de-pagina">Pie de Página</a>
@@ -70,7 +70,6 @@
         </tr>
       </thead>
       <tbody id= "tablaProductos"></tbody>
- 
     </table>
   </section>
 
@@ -83,7 +82,7 @@
         </div>
         <div class="modal-body">
           <form name="InsertProducto" id="insertForm" method="post">
-            <div class="mb-3">
+            <div class="mb-3"> 
               <label for="recipient-name" class="col-form-label">ID Producto:</label>
               <input type="text" class="form-control" id="recipient-noProducto" name="noProducto">
             </div>
@@ -113,8 +112,6 @@
     </div>
   </div>
  
-    
-    
   <div class="modal fade" id="updateProducto" tabindex="-1" aria-labelledby="updateProducto" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -122,35 +119,13 @@
           <h1 class="modal-title fs-5" id="updateProducto">Actualizacion producto</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form name="" method="post" action="updateProducts.php">
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">ID Producto:</label>
-              <input type="text" class="form-control" id="update-noProducto" name="noProducto">
-            </div>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nombre Producto:</label>
-              <input type="text" class="form-control" id="update-nombreProducto" name="nombreProducto">
-            </div>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Precio Producto:</label>
-              <input type="text" class="form-control" id="update-precioProducto" name="precioProducto">
-            </div>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Unidades Producto:</label>
-              <input type="text" class="form-control" id="update-unidadesProducto" name="unidadesProducto">
-            </div>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Descripción Producto:</label>
-              <input type="text" class="form-control" id="update-descripcionPro" name="descripcionPro">
-            </div>
+          <div class="modal-body">
+            
+          </div>
         </div>
-        
-        </form>
       </div>
     </div>
   </div>
-
 
   <div class="modal fade" id="deleteProducto" tabindex="-1" aria-labelledby="deleteProducto" aria-hidden="true">
     <div class="modal-dialog">
@@ -159,13 +134,10 @@
           <h1 class="modal-title fs-5" id="deleteProducto">Eliminacion producto</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form name="" method="post" action="deleteProducts.php">
-            
-        </div>
+        <form name="deleteProducto" method="post">
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-primary">Eliminar</button>
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Eliminar</button>
         </div>
         </form>
       </div>

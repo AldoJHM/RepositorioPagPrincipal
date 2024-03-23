@@ -11,7 +11,7 @@ $sql = "UPDATE productos SET nombreProducto = '$nombreProducto', precioProducto 
         unidadesProducto = $unidadesProducto, descripcionPro = '$descripcionPro' WHERE noProducto = $noProducto";
 
 if (mysqli_query($conection, $sql)) {
-    echo '<script language="javascript">alert("Nueva fila actualizada exitosamente"); window.location.href="index.php";</script>';
+    echo 'Nueva fila actualizada exitosamente';
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conection);
 }
