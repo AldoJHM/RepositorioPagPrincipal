@@ -21,6 +21,21 @@
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
+  <style>
+        /* CSS para el pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin-bottom: 0; /* Asegura que no haya espacio adicional debajo del párrafo */
+        }
+    </style>
 </head>
 
 <body>

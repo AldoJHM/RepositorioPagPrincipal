@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="sidebar__nav">
+        <a href="#">Inicio</a>
+        <a href="#que-es-css">¿Qué es CSS?</a>
+        <a href="#sintaxis-css">Sintaxis y Estructura de una Regla CSS</a>
+        <a href="#tipos-de-selectores-css">Tipos de Selectores CSS</a>
+        
+    </nav>
+    <div class="container-fluid">
+        <div class="container"><h1>Cascading Style Sheets "CSS".</h1></div>
+        <main class="content__main">
+            <section id="que-es-css">
+                <!-- Contenido de la sección "¿Qué es CSS?" -->
+                <h2>¿Qué es CSS?</h2>
+                <p>CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para dar estilo a documentos HTML.
+                    Permite
+                    controlar el aspecto y la presentación de múltiples páginas web al mismo tiempo.</p>
+                <p>Con CSS, puedes definir el color, la fuente, el tamaño y el espaciado del texto, así como el diseño,
+                    la
+                    ubicación y otros aspectos visuales de los elementos en una página web. Además, CSS permite crear
+                    diseños
+                    responsivos que se adaptan a diferentes dispositivos y tamaños de pantalla.</p>
+                <p>Una de las principales ventajas de CSS es su capacidad de cascada, lo que significa que puedes
+                    definir
+                    estilos en diferentes niveles y capas, y los estilos se aplicarán de acuerdo con la especificidad y
+                    la
+                    herencia.</p>
+                <p>En resumen, CSS es una herramienta poderosa que permite dar estilo y diseño a las páginas web, lo que
+                    mejora
+                    la experiencia del usuario y la apariencia visual de un sitio web.</p>
+            </section>
+
+            <section id="sintaxis-css">
+                <!-- Contenido de la sección "Sintaxis y estructura de una regla CSS" -->
+                <h2>Sintaxis y Estructura de una Regla CSS</h2>
+                <p>Una regla CSS consta de dos partes principales: un selector y un bloque de declaración.</p>
+                <h3>Selector</h3>
+                <p>El selector es el elemento al que se aplicarán los estilos. Puede ser el nombre de un elemento HTML,
+                    una
+                    clase, un identificador, o una combinación de estos.</p>
+                <p>Ejemplos de selectores:</p>
+                <ul>
+                    <li>Elemento HTML: <code>p { /* Estilos */ }</code></li>
+                    <li>Clase: <code>.clase { /* Estilos */ }</code></li>
+                    <li>Identificador: <code>#id { /* Estilos */ }</code></li>
+                    <li>Selector de atributo: <code>[atributo="valor"] { /* Estilos */ }</code></li>
+                </ul>
+                <h3>Bloque de Declaración</h3>
+                <p>El bloque de declaración contiene una o más propiedades y sus valores separados por dos puntos
+                    (<code>:</code>), cada declaración separada por punto y coma (<code>;</code>).</p>
+                <p>Ejemplo de un bloque de declaración:</p>
+                <pre>
+        <code>
+            {
+                propiedad1: valor1;
+                propiedad2: valor2;
+                propiedad3: valor3;
+                /* Más propiedades y valores */
+            }
+        </code>
+    </pre>
+                <p>Es importante recordar que las reglas CSS pueden anidarse dentro de otras reglas y que los estilos se
+                    aplicarán según la cascada y la especificidad.</p>
+
+            </section>
+
+            <section id="tipos-de-selectores-css">
+                <h2>Tipos de Selectores CSS</h2>
+                <p>En CSS, hay varios tipos de selectores que se utilizan para aplicar estilos a elementos específicos
+                    en una
+                    página web. Algunos de los tipos de selectores más comunes son:</p>
+                <h3>Selectores Simples</h3>
+                <p>Los selectores simples se utilizan para seleccionar elementos HTML específicos basados en su nombre,
+                    clase o
+                    ID.</p>
+                <pre>
+            <code>
+                /* Selector de elemento */
+                p {
+                    /* Estilos para párrafos */
+                }
+    
+                /* Selector de clase */
+                .clase {
+                    /* Estilos para elementos con la clase 'clase' */
+                }
+    
+                /* Selector de ID */
+                #id {
+                    /* Estilos para elementos con el ID 'id' */
+                }
+            </code>
+        </pre>
+                <h3>Selectores Combinadores</h3>
+                <p>Los selectores combinadores se utilizan para seleccionar elementos basados en su relación con otros
+                    elementos.</p>
+                <pre>
+            <code>
+                /* Selector de descendencia */
+                div p {
+                    /* Estilos para párrafos dentro de divs */
+                }
+    
+                /* Selector de hijo directo */
+                ul > li {
+                    /* Estilos para elementos que son hijos directos de  */
+                }
+    
+                /* Selector de hermano adyacente */
+                h2 + p {
+                    /* Estilos para párrafos que son hermanos adyacentes de h2 */
+                }
+            </code>
+        </pre>
+                <h3>Selectores de Pseudoclase</h3>
+                <p>Los selectores de pseudoclase se utilizan para aplicar estilos a un elemento en función de su estado
+                    o
+                    interacción del usuario.</p>
+                <pre>
+        <code>
+            /* Selector de enlace no visitado */
+            a:link {
+                /* Estilos para enlaces no visitados */
+            }
+
+            /* Selector de enlace visitado */
+            a:visited {
+                /* Estilos para enlaces visitados */
+            }
+
+            /* Selector de elemento activo */
+            button:active {
+                /* Estilos para botones activos */
+            }
+        </code>
+    </pre>
+
+                <h3>Selectores de Pseudoelementos</h3>
+                <p>Los selectores de pseudoelementos se utilizan para aplicar estilos a partes específicas de un
+                    elemento.</p>
+                <pre>
+        <code>
+            /* Selector de primer elemento hijo */
+            p:first-child {
+                /* Estilos para el primer párrafo dentro de su contenedor */
+            }
+
+            /* Selector de primer línea de texto */
+            p::first-line {
+                /* Estilos para la primera línea de texto en párrafos */
+            }
+
+            /* Selector de primer letra */
+            p::first-letter {
+                /* Estilos para la primera letra en párrafos */
+            }
+        </code>
+    </pre>
+
+                <h3>Selectores de Atributos</h3>
+                <p>Los selectores de atributos se utilizan para aplicar estilos a elementos que tengan un atributo
+                    específico.
+                </p>
+                <pre>
+        <code>
+            /* Selector de atributo específico */
+            input[type="text"] {
+                /* Estilos para inputs de tipo texto */
+            }
+
+            /* Selector de atributo que comienza con un valor específico */
+            a[href^="https"] {
+                /* Estilos para enlaces con href que comiencen con "https" */
+            }
+
+            /* Selector de atributo que contiene un valor específico */
+            img[alt*="imagen"] {
+                /* Estilos para imágenes con alt que contengan "imagen" */
+            }
+        </code>
+    </pre>
+            </section>
+
+            <section id="insertar-css">
+                <h2>Formas de Insertar CSS en una Página HTML</h2>
+                <p>Existen varias formas de incluir CSS en una página HTML. Algunas de las formas más comunes son:</p>
+                <ul>
+                    <li><strong>Etiqueta &lt;style&gt;:</strong> Puedes incluir CSS directamente en el &lt;head&gt; de tu documento HTML utilizando la etiqueta &lt;style&gt;.</li>
+                    <li><strong>Archivo Externo:</strong> También puedes enlazar un archivo CSS externo utilizando la etiqueta &lt;link&gt; dentro del &lt;head&gt; de tu documento HTML.</li>
+                    <li><strong>Atributo style:</strong> Además, puedes aplicar estilos directamente a elementos HTML utilizando el atributo style.</li>
+                </ul>
+                <!-- Puedes agregar más detalles o ejemplos aquí -->
+            </section>
+            
+            <section id="propiedades-css">
+                <h2>Propiedades CSS Más Utilizadas</h2>
+                <p>A continuación, se presenta una tabla con algunas de las propiedades CSS más comunes, organizadas por tipo de selector:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Propiedad</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                      
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí puedes agregar filas para cada propiedad con su descripción, ejemplo y opcionalmente un video -->
+                        <tr>
+                            <td>color</td>
+                            <td>Establece el color del texto.</td>
+                            <td><code>color: red;</code></td>
+            
+                        </tr>
+                        <tr>
+                            <td>font-size</td>
+                            <td>Establece el tamaño de la fuente.</td>
+                            <td><code>font-size: 16px;</code></td>
+                         
+                        </tr>
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </section>            
+            
+    </div>
+    </main>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px 0;" id='pie-de-pagina'>
+        <div style="max-width: 1200px;">
+            <p>© 2024 Mi Pagina. Created By @AldoHernandez Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
